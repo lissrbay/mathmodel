@@ -88,5 +88,5 @@ graphs = [generate_graph(i) for i in range(1, 11)]
 def update_output(step, input):
     return graphs[step-1]
 
-
-app.run_server(debug=True, port=8080)
+server = app.server
+app.run_server(debug=True)
